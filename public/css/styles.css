@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+/*navbar*/
+.navbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar .navbar-nav a {
+    margin: 0 10px;
+}
+
+/*banner*/
+#top-container {
+    padding: 110px;
+    background-color: #F7F9FC;
+    border-bottom: 4px solid #013068;
+    margin-bottom: 30px;
+    background-image: url('/img/company2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#main-title{
+    padding: 9px 0;
+    font-size: 3rem;
+}
+
+#main-subtitle {
+    font-size: 1rem;
+    padding: 80px;
+}
+
+#search-form {
+    margin-left: 40px;
+}
+
+#search-button {
+    margin-left: 29px;
+}
+
+/*Lista*/
+
+ #job-list .list-group-item {
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    padding: 15px 80px;
+    color: #212529;
+    
+}
+/* 
+#job-list .list-group-item p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    
+}
+
+*/
+
+job-list .list-group-item.new-job {
+    border: none;
+    background-color: #e4fad6;
+}
+
+/*
+
+#jobs-container {
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+#job-list-title {
+    margin-bottom: 35px;
+} */
+
+/* .list-group-item img {
+    width: 600px;
+    border: 1px solid #212529;
+    border-radius: 2%;
+    background-color: #fff;
+    
+    left: -40px;
+    top: calc(50% -40px)
+} */
+
+
+/* .new-job-label {
+    display: none;
+}
+
+.new-job.new-job-label {
+    display: block;
+   
+} */
+
+/*Responsivel*/
+
+@media (max-width: 481px) {
+    /*navbar*/
+    .navbar .navbar-nav  {
+        text-align: center;
+    }
+
+    /* home */
+    #top-container {
+        padding: 50px;
+        padding-top: 100px;
+    }
+    #main-title{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    
+    #main-subtitle {
+        text-align: center;
+        font-size: 0.5;
+        
+    }
+
+    #search-form {
+        padding: 0;
+        margin: 5px;
+    }
+    
+    #search-button {
+        margin-top: 2rem;
+        margin: center;
+        
+    }
+}

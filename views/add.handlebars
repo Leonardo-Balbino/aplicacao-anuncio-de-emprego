@@ -1,0 +1,85 @@
+ <div id="add-form-container" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <h1 class="text-center">
+                    Divulgue a Vaga Preenchendo o formulário
+                </h1>
+                <form novalidate class="needs-validation" id="formLogin" action="/jobs/add" method="post">
+                    <div class="form-group">
+                        <label for="title">Titulo da vaga</label>
+                        <input class="form-control required" type="text" name="title" id="title" placeholder="Digite o titulo da vaga..." required>
+                        <small id="titleHelp"class="form-text text-muted">O título e impotante para conectarmos programadores a sua vaga</small>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="description">Descrição da vaga</label>
+                        <textarea class="form-control required" type="text" name="description" id="description"placeholder="Descreva as atividades do desenvolvedor..." required></textarea>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="company">Nome da Empresa</label>
+                        <input class="form-control required" type="text" name="company" id="company" placeholder="Digite o nome da empresa contratante" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="e-mail">e-mail</label>
+                        <input class="form-control required" type="e-mail" name="email" id="email" placeholder="Digite o email de contato" required>
+                        <small id="titleHelp"class="form-text text-muted">Informe um e-mail que os concorrentes da vaga possam entrar em contato</small>
+                    </div>
+                    <br>
+                    <label for="e-mail">Digite o Salário oferecido para a vaga</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text">R$</span>
+                        </div>
+                           <input type="text" class="form-control  required" type="number" name="salary" id="salary" placeholder="0,00" wfd-id="id6" required>
+                       </div>
+                    
+                    <br>
+                    {{!-- <div class="form-group">
+                        <label for="states">Estados</label>
+                        <select name="states" id="formStates"
+                            class="form-control">
+                                <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                            
+                        </select>
+                    </div> --}}
+                    <input type="hidden" name="new_job" value="1">
+                    <br>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="form-control btn btn-primary" type="submit">Salvar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>

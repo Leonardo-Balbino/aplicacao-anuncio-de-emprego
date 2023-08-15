@@ -1,0 +1,33 @@
+<div id="job-view-coontainer" class="container">
+    <div class="row">
+        {{!-- <a class="back-link main-color" href="/">Voltar</a> --}}
+        <br>
+        <div id="img-container" class="col-md-12">
+             <br>
+             <div class="card">
+                <img src="/img/empresas.jpg" alt="company">
+                <div class="card-body">
+                  <h5 class="main-color">{{job.dataValues.title}}</h5>
+                  <p class="bold">Qula o perfil o recrutador busca:</p>
+                  <p class=" job-desc card-text">{{job.dataValues.description}}</p>
+                  <p><span class="bold">O salário oferecido é de:</span>R$ {{job.dataValues.salary}}</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <p>Email para se candidatar para a empresa: <span class="">{{job.dataValues.company}}</span> clique aqui para enviar o e-mail<p>{{job.dataValues.email}}</p><a class="btn btn-dark" href="mail:to{{job.dataValues.email}}">Mandar Email</a></p>
+                    </div>
+                
+                    
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        {{!-- <div class="col-md-12">
+            <div class="main-color">{{job.dataValues.title}}</div>
+            <p class="bold">Qula o perfil o recrutador busca:</p>
+            <p class="job-desc">{{job.dataValues.description}}</p>
+            <p><span class="bold">O salário oferecido é de:</span>R$ {{job.dataValues.salary}}</p>
+            <p>Email para se candidatar para a empresa: <span class="bold main-color">{{jod.dataValues.company}}</span>clique aqui para enviar o e-mail <a href="mail:to{{job.dataValues.email}}"></a>{{job.dataValues.email}}</p>
+        </div> --}}
+</div>
